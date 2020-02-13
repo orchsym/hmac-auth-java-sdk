@@ -21,13 +21,15 @@ hmac认证 implemented by Java.
 ### 方法说明：
 请求path md5计算:  
 `class omc.appauth.common.util.MD5Util`  
-方法：`public static String md5(String param)`  
-|  参数名称  | 说明  |  
+方法：`public static String md5(String param)`
+|  参数名称  | 说明  |
 |  ----  | ----  |  
-| param  | 请求path |  
+| param  | 请求path |   
+
 获取日期：  
 `omc.appauth.common.util.HMacSha256Util`   
 方法：`public static String getDate()`  
+  
 构建待签名报文：  
 `omc.appauth.common.util.HMacSha256Util`  
 方法：`public static String getContent(String... contents)`  
